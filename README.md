@@ -43,31 +43,38 @@ The notebook is in tutorial format, you can follow.
 
 RAG-Graph-Implementation/
 
+
 ├── 📘 README.md
-│   └─ Project overview, usage instructions, results, and documentation.
-│
+
+│    Project overview, usage instructions, results, and documentation.
+
+
 ├── 📓 RAG.ipynb
-│   └─ Main Jupyter notebook implementing and comparing RAG methods 
-│      (Dense, Sparse, Graph-based, Hybrid) with evaluation pipeline.
-│
+
+│    Main Jupyter notebook implementing and comparing RAG methods (Dense, Sparse, Graph-based, Hybrid) with evaluation pipeline.
+
 ├── 🗂️ files/
-│   ├── ai_semantic_graph.json
-│   │   └─ Generated knowledge graph capturing entity and relationship links
-│   │      from retrieved documents and answers.
-│   │
-│   ├── config.json
-│   │   └─ Configuration file for BERT-based topic modeling (`bertopic`) 
-│   │
-│   ├── topics.json
-│   │   └─ Output from `bertopic`, storing discovered topics, keywords, 
-│   │      and representative documents.
-│   │
-│   ├── qa_results.csv
-│   │   └─ Generated answers and evaluation results for each retriever type 
-│   │      (faithfulness, answer relevance, context precision/recall).
-│   │
-│   └─ (Large model / vector files not pushed due to Git size limits)
-│       └─ Example: ChromaDB index, sentence embeddings.
+
+    ├──  📓ai_semantic_graph.json
+
+    │    Generated knowledge graph capturing entity and relationship links from retrieved documents and answers.
+
+    ├──  📓config.json
+
+    │    Configuration file for BERT-based topic modeling (bertopic).
+
+    ├── 📓topics.json
+
+    │    Output from bertopic, storing discovered topics, keywords, and representative documents.
+
+    ├── 📓qa_results.csv
+
+    │    Generated answers and evaluation results for each retriever type (faithfulness, answer relevance, context precision/recall).
+
+    └── (Large model / vector files not pushed due to Git size limits)
+
+    │    Example: ChromaDB index, sentence embeddings.
+
 
 
 ## Evaluation
