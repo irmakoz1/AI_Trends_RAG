@@ -5,38 +5,38 @@ The notebook is in tutorial format, you can follow.
 
 ## Features:
 
-- Dense, Sparse, Graph, and Hybrid Retrievals: Compare multiple retrieval paradigms within a unified framework.
+- **Dense, Sparse, Graph, and Hybrid Retrievals:** Compare multiple retrieval paradigms within a unified framework.
 
-- Graph Generation: Automatically constructs a knowledge graph from data using entity and triples to model semantic and relational structures.
+- **Graph Generation:** Automatically constructs a knowledge graph from data using entity and triples to model semantic and relational structures.
 
-- BERTopic for question generation related to top 50 topics in the dataset.
+- **BERTopic** for question generation related to top 50 topics in the dataset.
 
-- Classifies generated questions into Conceptual, Comparative or Analytical using facebook/bart-large-mnli model.
+- **Classification of generated questions** into Conceptual, Comparative or Analytical using facebook/bart-large-mnli model.
 
-- Use an API to fetch AI trends graph.
+- Use an **API** to fetch AI trends graph.
 
-- Different chunking strategies such as recursive and semantic chunking.
+- Different **chunking strategies** such as recursive and semantic chunking.
 
-- Reranking Mechanism: Improves the final response faithfulness in hybrid retriever using reranking.
+- **Reranking Mechanism:** Improves the final response faithfulness in hybrid retriever using reranking.
 
-- Custom Evaluation Functions: Measure retrieval quality and model performance using cosine similarity and a bag-of-words overlap with parallel processing.
+- **Custom Evaluation Functions:** Measure retrieval quality and model performance using cosine similarity and a bag-of-words overlap with parallel processing.
 
-- Modular Design: Each component can be tested, extended, or replaced independently.
+- **Modular Design:** Each component can be tested, extended, or replaced independently.
 
-- A literature review for recent research in RAG systems.
+- A **literature review** for recent research in RAG systems.
 
 
 ## Tech Stack
 
-Language: Python
+**Language:** Python
 
-Frameworks: PyTorch, LangChain
+**Frameworks:** PyTorch, LangChain
 
-Libraries: HuggingFace Transformers, ChromaDB, NetworkX, Scikit-learn
+**Libraries:** HuggingFace Transformers, ChromaDB, NetworkX, Scikit-learn
 
-LLM Model: google-flan-t5-large
+**LLM Model:** google-flan-t5-large
 
-Embedding Model: sentence-transformers/all-MiniLM-L6-v2
+**Embedding Model:** sentence-transformers/all-MiniLM-L6-v2
 
 
 ## Evaluation
@@ -54,7 +54,7 @@ Embedding Model: sentence-transformers/all-MiniLM-L6-v2
 ## Architecture Diagram
 
   
-<img width="60" height="240" alt="rag drawio (1)" src="https://github.com/user-attachments/assets/f3686f17-c6fe-4702-a2c7-7d93b434fabd" />
+<img width="120" height="480" alt="rag drawio (1)" src="https://github.com/user-attachments/assets/f3686f17-c6fe-4702-a2c7-7d93b434fabd" />
 
 
 
