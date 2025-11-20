@@ -7,21 +7,25 @@ The notebook is in tutorial format, you can follow.
 
 - **Dense, Sparse, Graph, and Hybrid Retrievals:** Compare multiple retrieval paradigms within a unified framework.
 
-- **Graph Generation:** Automatically constructs a knowledge graph from data using entity and triples to model semantic and relational structures.
+- **Graph Generation:** Automatically constructs a knowledge graph from data using entity and triples to model semantic and relational structures and visualisation with Pyvis.
 
-- **BERTopic** for question generation related to top 50 topics in the dataset.
+- **BERTopic** for finding most relevant 50 topics in the dataset.
+
+- **Q&A Generation** from the documents related to the most relevant topics using LLM's and comparison between different models.
 
 - **Classification of generated questions** into Conceptual, Comparative or Analytical using facebook/bart-large-mnli model.
 
-- Use an **API** to fetch AI trends graph.
+- Use an **API** to fetch AI trends knowledge graph.
 
 - Different **chunking strategies** such as recursive and semantic chunking.
 
-- **Reranking Mechanism:** Improves the final response faithfulness in hybrid retriever using reranking.
+- Embedding and Vectorstore construction with batch processesing using **Langchain**, **Sentence Transformers** and **ChromaDB** for fast retrieval and evaluation.
+
+- **Reranking Mechanism:** Improves the final response faithfulness in hybrid retriever using reranking with **CrossEncoder** from Sentence Transformers.
 
 - **Custom Evaluation Functions:** Measure retrieval quality and model performance using cosine similarity and a bag-of-words overlap with parallel processing.
 
-- **Modular Design:** Each component can be tested, extended, or replaced independently.
+- **Object Oriented Design:** Using abstraction and modular code, each component can be tested, extended, or replaced independently.
 
 - A **literature review** for recent research in RAG systems.
 
@@ -32,9 +36,13 @@ The notebook is in tutorial format, you can follow.
 
 **Frameworks:** PyTorch, LangChain
 
-**Libraries:** HuggingFace Transformers, ChromaDB, NetworkX, Scikit-learn
+**Libraries:** HuggingFace Sentence Transformers, NetworkX, Scikit-learn, nltk, BERTopic, pandas
+
+**VectorStore:** ChromaDB
 
 **LLM Model:** google-flan-t5-large
+
+**Reranking Model:** ms-marco-MiniLM-L-6-v2
 
 **Embedding Model:** sentence-transformers/all-MiniLM-L6-v2
 
