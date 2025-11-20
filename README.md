@@ -3,6 +3,9 @@ A comprehensive RAG project for AI Trends implementing and comparing multiple re
 
 The notebook is in tutorial format, you can follow.
 
+<img width="120" height="480" alt="rag drawio (1)" src="https://github.com/user-attachments/assets/f3686f17-c6fe-4702-a2c7-7d93b434fabd" />
+
+
 ## Features:
 
 - **Dense, Sparse, Graph, and Hybrid Retrievals:** Compare multiple retrieval paradigms within a unified framework.
@@ -95,12 +98,6 @@ RAG-Graph-Implementation/
 | Graph NER      | 0.00000 | 0.282118 | 0.029462 | 0.013188 |
 | Hybrid         | 0.00000 | 0.321491 | 0.031340 | 0.013853 |
 
-
-
-## Architecture Diagram
-
-  
-<img width="120" height="480" alt="rag drawio (1)" src="https://github.com/user-attachments/assets/f3686f17-c6fe-4702-a2c7-7d93b434fabd" />
 
 
 
