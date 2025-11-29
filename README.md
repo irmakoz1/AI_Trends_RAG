@@ -6,48 +6,37 @@ The notebook is in tutorial format, you can follow.
 <img width="120" height="480" alt="rag drawio (1)" src="https://github.com/user-attachments/assets/f3686f17-c6fe-4702-a2c7-7d93b434fabd" />
 
 
-## Features:
+## Features
 
-- **Dense, Sparse, Graph, and Hybrid Retrievals:** Compare multiple retrieval paradigms within a unified framework.
-
-- **Graph Generation:** Automatically constructs a knowledge graph from data using entity and triples to model semantic and relational structures and visualisation with Pyvis.
-
-- **BERTopic** for finding most relevant 50 topics in the dataset.
-
-- **Q&A Generation** from the documents related to the most relevant topics using LLM's and comparison between different models.
-
-- **Classification of generated questions** into Conceptual, Comparative or Analytical using facebook/bart-large-mnli model.
-
-- Use an **API** to fetch AI trends knowledge graph.
-
-- Different **chunking strategies** such as recursive and semantic chunking.
-
-- Embedding and Vectorstore construction with batch processesing using **Langchain**, **Sentence Transformers** and **ChromaDB** for fast retrieval and evaluation.
-
-- **Reranking Mechanism:** Improves the final response faithfulness in hybrid retriever using reranking with **CrossEncoder** from Sentence Transformers.
-
-- **Custom Evaluation Functions:** Measure retrieval quality and model performance using cosine similarity and a bag-of-words overlap with parallel processing.
-
-- **Object Oriented Design:** Using abstraction and modular code, each component can be tested, extended, or replaced independently.
-
-- A **literature review** for recent research in RAG systems.
+| Feature                                   | Description                                                                                                                          |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Multiple Retrieval Paradigms**          | Supports dense, sparse, graph-based, and hybrid retrievals within a single unified framework.                                        |
+| **Automated Graph Generation**            | Builds knowledge graphs from data using entities and triples with semantic and relational modeling, visualized via **Pyvis**.      |
+| **Topic Modeling with BERTopic**          | Identifies the top 50 most relevant topics in the dataset.                                                                          |
+| **Q&A Generation**                        | Generates questions from documents related to the most relevant topics using LLMs, supporting comparison across models.              |
+| **Question Classification**               | Categorizes generated questions into **Conceptual, Comparative, or Analytical** using the `facebook/bart-large-mnli` model.          |
+| **AI Trends API**                         | Fetches knowledge graphs of AI trends for enriched data insights.                                                                    |
+| **Flexible Chunking Strategies**          | Supports recursive and semantic chunking for efficient document processing.                                                          |
+| **Embedding & Vector Store Construction** | Batch processing with **LangChain**, **Sentence Transformers**, and **ChromaDB** for fast retrieval and evaluation.                  |
+| **Reranking Mechanism**                   | Enhances response faithfulness in hybrid retrievals using **CrossEncoder** from Sentence Transformers.                               |
+| **Custom Evaluation Metrics**             | Measures retrieval quality and model performance using cosine similarity and bag-of-words overlap, with parallel processing support. |
+| **Modular, Object-Oriented Design**       | Components are abstracted and modular, making them easy to test, extend, or replace independently.                                   |
+| **Literature Review**                     | Includes a review of recent research on Retrieval-Augmented Generation (RAG) systems.                                                |
 
 
 ## Tech Stack
 
-**Language:** Python
 
-**Frameworks:** PyTorch, LangChain
+| Component           | Details                                                                           |
+| ------------------- | --------------------------------------------------------------------------------- |
+| **Language**        | Python                                                                            |
+| **Frameworks**      | PyTorch, LangChain                                                                |
+| **Libraries**       | HuggingFace Sentence Transformers, NetworkX, Scikit-learn, nltk, BERTopic, pandas |
+| **Vector Store**    | ChromaDB                                                                          |
+| **LLM Model**       | google-flan-t5-large                                                              |
+| **Reranking Model** | ms-marco-MiniLM-L-6-v2                                                            |
+| **Embedding Model** | sentence-transformers/all-MiniLM-L6-v2                                            |
 
-**Libraries:** HuggingFace Sentence Transformers, NetworkX, Scikit-learn, nltk, BERTopic, pandas
-
-**VectorStore:** ChromaDB
-
-**LLM Model:** google-flan-t5-large
-
-**Reranking Model:** ms-marco-MiniLM-L-6-v2
-
-**Embedding Model:** sentence-transformers/all-MiniLM-L6-v2
 
 
 ## Project Structure
